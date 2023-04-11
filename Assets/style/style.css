@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+
+.homeContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.grids{
+    height: 100%;
+}
+.grids:nth-child(1){
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgb(242, 243, 247);
+    position: fixed;
+    width: 330px;
+}
+.grids:nth-child(2){
+    grid-column: 2/5;
+}
+/* grid 1 */
+#profile-pic{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+.menu{
+    list-style: none;
+    margin-left: -40px;
+}
+.menus{
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+.menus:hover{
+    color:rgb(44, 152, 240);
+    text-decoration: underline;
+}
+li{
+    margin-top:10px;
+}
+.Name{
+    margin-top: 8px;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    font-size:25px;
+}
+.title{
+    font-family: 'poppins', sans-serif;
+    color: rgb(44, 152, 240);
+    font-size:13px ;
+}
+
+.menufooter{
+    font-family: 'poppins', sans-serif;
+    color: rgb(80, 80, 80);
+    font-size:13px;
+}
+.menus.active{
+    color:rgb(44, 152, 240);
+    text-decoration: underline;
+}
+/* end of grid 1 */
+/* grid 2 */
+/* home */
+#home{
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.introCont{
+    padding-top: 160px;
+    padding-left: 70px;
+    font-family: 'poppins', sans-serif;
+}
+
+@keyframes text-fade-in{
+    0% {opacity:0;}
+    100% {opacity: 1;}
+}
+ .introCont{
+    animation:text-fade-in 3s;
+ }
+#download{
+    font-family: 'poppins', sans-serif;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 40px;
+}
+#download:hover{
+    border: 1px solid rgb(238, 236, 236);
+    background-color: rgb(133, 177, 243);
+    color: white;
+}
+#download:active{
+    border: 1px solid rgb(238, 236, 236);
+    background-color: rgb(98, 128, 173);
+    color: white;
+}
+.fa-download{
+    color: rgb(80, 80, 80);
+}
+/* end of home */
+/* about */
+#about{
+    margin-top: 140px;
+    padding-left: 30px;
+    font-family: 'poppins', sans-serif;
+}
+.about-title{
+    letter-spacing: 5px;
+    font-size: 13px;
+    color: gray;
+}
+.cover-letter{
+    word-spacing: 3px;
+    font-size: 15px;
+    padding-right: 20px;
+}
+.titleAbout{
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-right: 20px;
+}
+.gridSkill{
+    box-shadow: 0 0 15px rgb(167, 164, 164);
+    height: 180px;
+    padding: 20px;
+}
+.gridSkill:nth-child(1){ /* nth-child 1 */
+    border-bottom:3px solid rgb(44, 152, 240) ;
+}
+.gridSkill:nth-child(1) > h4{
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+.fa-pen-nib{
+    color: rgb(44, 152, 240);
+    font-size: 30px;
+    text-shadow: 1px 1px 10px rgb(136, 134, 134);
+}
+
+.gridSkill:nth-child(2){ /*nth-child 2*/
+    border-bottom:3px solid rgb(236, 84, 83) ;
+}
+.gridSkill:nth-child(2) > h4{
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+.fa-desktop{
+    color: rgb(236, 84, 83);
+    font-size: 30px;
+    text-shadow: 1px 1px 10px rgb(136, 134, 134);
+}
+
+.gridSkill:nth-child(3){ /*nth-child 3*/
+    border-bottom:3px solid rgb(168, 76, 184);
+}
+.gridSkill:nth-child(3) > h4{
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+.fa-code{
+    color: rgb(168, 76, 184);
+    font-size: 30px;
+    text-shadow: 1px 1px 10px rgb(136, 134, 134);
+}
+
+.gridSkill:nth-child(4){ /*nth-child 4*/
+    border-bottom:3px solid rgb(249, 191, 63);
+}
+.gridSkill:nth-child(4) > h4{
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+.fa-mobile-screen-button{
+    color: rgb(249, 191, 63);
+    font-size: 30px;
+    text-shadow: 1px 1px 10px rgb(136, 134, 134);
+}
+/* end of about */
+
+/* skills */
+#skills{
+    font-family: 'poppins', sans-serif;
+    margin-left: 30px;
+    margin-top: 160px;
+}
+#specialty{
+    letter-spacing: 5px;
+    font-size: 13px;
+    color: gray;
+}
+.titleSkills{
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.specialtyCont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    row-gap: 5px;
+    padding-left: 10px;
+}
+.spc{
+    margin-top: 15px;
+}
+.specialtySkills > p{
+    font-weight: bold;
+}
+.specialtySkills:nth-child(1) > i{
+    color: rgb(44, 152, 240);
+    font-size: 20px;
+}
+.specialtySkills:nth-child(2) > i{
+    color: rgb(236, 84, 83);
+    font-size: 20px;
+}
+.specialtySkills:nth-child(3) > i{
+    color: rgb(249, 191, 63);
+    font-size: 20px;
+}
+.specialtySkills:nth-child(4) > i{
+    color: rgb(168, 76, 184);
+    font-size: 20px;
+}
+.specialtySkills:nth-child(5) > i{
+    color: rgb(47, 164, 153);
+    font-size: 20px;
+}
+.specialtySkills:nth-child(6) > i{
+    color: rgb(58, 76, 161);
+    font-size: 20px;
+}
+/* end of skills */
+/* educ */
+#educ{
+    margin-top: 180px;
+    padding-left: 30px;
+}
+.titleEduc{
+    font-family: 'poppins', sans-serif;
+    font-weight: bolder;
+}
+.images{
+    width: 250px;
+    box-shadow: 0 0 5px gray;
+    cursor: pointer;
+}
+.images:active{
+    transform: scale(2) translateY(-50%);
+    position: static;
+}
+.accordion-item{
+    font-family: 'poppins', sans-serif;
+}
+.accordion-button{
+    font-weight: bold;
+}
+/* end of educ */
+
+/* experience */
+#exp{
+    font-family: 'poppins', sans-serif;
+    margin-left: 30px;
+    margin-top: 160px;
+}
+#exp-title{
+    letter-spacing: 5px;
+    font-size: 13px;
+    color: gray;
+}
+#titleEXP{
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.experience{
+    background-color: rgb(212, 210, 210);
+    width: 90%;
+    float: right;
+    margin-right: 40px;
+    margin-top:8px;
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+
+}
+.experience > h4{
+    font-weight: bolder;
+}
+.experience > .year{
+    color: rgb(128, 126, 126);
+}
+.experience:nth-child(2){
+    margin-top: -50px;
+}
+#one{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(236, 84, 83);
+    border-radius: 50%;
+    padding: 10px;
+}
+#two{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(236, 84, 83);
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 230px;
+}
+#three{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(236, 84, 83);
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 300px;
+}
+/* end of exeperience */
+/* WORK */
+#work{
+    font-family: 'poppins', sans-serif;
+    margin-left: 30px;
+    margin-top: 300px;
+}
+#work-title{
+    letter-spacing: 5px;
+    font-size: 13px;
+    color: gray;
+}
+#titleWork{
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.Gridrow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    row-gap: 20px;
+    margin-top: 120px;
+}
+.Gridcol{
+    height: 220px;
+    border-radius:10px;
+    margin-right: 10px;
+    box-shadow: 0 0 8px gray;
+}
+.titles-Work{
+    padding: 20px 20;
+}
+
+
+.bottomCont{
+    margin: 100px 20px;
+    display: flex;
+    gap: 10px;
+}
+.bottomCont > button{
+    background-color: rgb(230, 216, 243);
+    height:35px;
+    
+}
+.fa-share,
+.fa-eye{
+    color: rgb(128, 126, 126);
+}
+.fa-heart{
+    color: rgb(236, 84, 83);
+}
+.titles-Work > h4{
+    font-weight: bold;
+}
+.titleHover{
+    opacity:0;
+}
+.titleHover:hover{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 127, 212);
+    border-radius:10px;
+    opacity: 1;
+    text-align: start;
+}
+#travel-tours{
+    background-image: url(../images/Works/TravelAndTours.jpg);
+    background-size: contain;
+}
+#MilkteaShop{
+    background-image: url(../images/Works/TravelAndTours.jpg);
+    background-size: contain;
+}
+#OnlineShop{
+    background-image: url(../images/Works/onlineShop.jpg);
+    background-size: contain;
+}
+#OnlineLibrary{
+    background-image: url(../images/Works/TravelAndTours.jpg);
+    background-size: contain;
+}
+#Converter{
+    background-image: url(../images/Works/converter.jpg);
+    background-size: contain;
+}
+#RPS{
+    background-image: url(../images/Works/TravelAndTours.jpg);
+    background-size: contain;
+}
+/* END OF WORK */
+/* contact */
+#contact{
+    font-family: 'poppins', sans-serif;
+    margin-left: 30px;
+    margin-top: 300px;
+    margin-bottom: 280px;
+}
+#contact-title{
+    letter-spacing: 5px;
+    font-size: 13px;
+    color: gray;
+}
+#titleContact{
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.rowContact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+.inner1{
+    display: flex;
+    gap:30px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.inner1 > i{
+    color: rgb(44, 152, 240);
+    background-color:rgb(236, 230, 232) ;
+    padding: 20px;
+}
+.inner1 > p {
+    margin-top:10px;
+}
+.gridContact:nth-child(2){
+    margin-right: 20px;
+}
+.inputs{
+    margin-bottom: 18px;
+    height: 60px;
+}
+#sendMessage{
+    background-color: rgb(44, 152, 240);
+    color:white;
+}
+/* end of contact */
