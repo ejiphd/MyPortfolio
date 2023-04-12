@@ -407,23 +407,15 @@ li{
     background-size: contain;
 }
 #MilkteaShop{
-    background-image: url(../images/Works/TravelAndTours.jpg);
+    background-image: url(../images/Works/coffeeBlog.jpg);
     background-size: contain;
 }
 #OnlineShop{
     background-image: url(../images/Works/onlineShop.jpg);
     background-size: contain;
 }
-#OnlineLibrary{
-    background-image: url(../images/Works/TravelAndTours.jpg);
-    background-size: contain;
-}
 #Converter{
     background-image: url(../images/Works/converter.jpg);
-    background-size: contain;
-}
-#RPS{
-    background-image: url(../images/Works/TravelAndTours.jpg);
     background-size: contain;
 }
 /* END OF WORK */
